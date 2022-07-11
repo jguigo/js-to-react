@@ -1,12 +1,10 @@
-import './src/styles/settings/colors.css'
-import './src/styles/generic/reset.css'
-import './src/styles/elements/base.css'
-
-import CardGame from "./src/components/CardGame";
+import "./src/styles/settings/colors.css"; //primeiro carregando as cores
+import "./src/styles/generic/reset.css"; //depois os generics
+import "./src/styles/elements/base.css"; //por fim os elementos
+import BoardGame from "./src/objects/BoardGame";
 
 //declaração de variáveis utilizando '$' significa que aquela variável guarda alguma referencia da tela!
 const $root = document.querySelector("#root");
+const $htmlBoardGame = BoardGame(6);
 
-const $htmlCardGame = CardGame();
-
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
+$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
