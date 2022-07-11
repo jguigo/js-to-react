@@ -4,7 +4,7 @@ import "./style.css";
 
 //ideia do JSX
 function CardGame() {
-    return `
+    return /*html*/`
       <article class="card-game">
          <img src="images/a-image.svg">
      </article>
