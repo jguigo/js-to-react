@@ -3,10 +3,10 @@
 import "./style.css";
 
 //ideia do JSX
-function CardGame() {
-    return /*html*/`
+function CardGame(icon = "alura-pixel", alt = "Logo da Alura") {
+   return /*html*/ `
       <article class="card-game">
-         <img src="images/a-image.svg">
+         <img src="images/${icon}.svg" alt="${alt}">
      </article>
    `;
 }
